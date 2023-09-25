@@ -283,7 +283,7 @@ nav a:hover{
     color: var(--white);
 }
 .about__bottom p {
-    max-width: 560px;
+    /* max-width: 560px; */
     margin-bottom: 20px;
 }
 .about__bottom img{
@@ -804,7 +804,7 @@ footer{
         align-items: center;
         justify-content: space-between;
         position: relative;
-        padding: 15px 20px;
+        padding: 10px 20px;
         position: fixed;
         left: 0;
         top: 0;
@@ -956,11 +956,18 @@ footer{
     }
   
 }
-
+@media screen and (max-width:720px) {
+    h1{
+        font-size: 36px;
+        word-wrap: break-word;
+    }
+    
+}
 @media screen and (max-width:625px){
     .main{
         padding: 172px 0;
     }
+   
    .services,
    .book-section,
    .footer-container{
