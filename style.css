@@ -510,7 +510,7 @@ nav a:hover{
 
 .tab label::after {
     position: absolute;
-    content: url(../images/white-plus.svg);
+    content: url(./images/white-plus.svg);
     right: 40px;
     top: 50%;
     transform: translateY(-50%);
@@ -551,7 +551,7 @@ nav a:hover{
     margin-top: -37.5px;
 }
 .tab label:hover::after {
-    content: url(../images/plus.svg);
+    content: url(./images/plus.svg);
     transition: all .33s;
  }
 .tab label:hover > .tab-span {
@@ -659,8 +659,6 @@ nav a:hover{
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    /* display: flex;
-    align-items: flex-start; */
 }
 #message{
     margin-bottom: 30px;
