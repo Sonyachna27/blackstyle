@@ -971,9 +971,11 @@ footer{
     }
    
    .services,
-   .book-section,
-   .footer-container{
+   .book-section   {
     padding: 70px 0;
+   }
+   .footer-container{
+    padding: 100px 0;
    }
    .mb-s,
    .mb-m{
@@ -1005,6 +1007,13 @@ footer{
    .about__bottom{
     gap: 30px;
    }
+   .about__bottom-wrapper {
+    padding: 30px 20px;
+}
+    .connect-section{
+        padding: 70px 0;
+    }
+  
    .work__wrapper h2{
     max-width: 230px;
     text-align: center;
@@ -1033,6 +1042,8 @@ footer{
         overflow-x: scroll;
         min-width: calc(100vw - 20px);
         margin-left: 20px;
+        align-items: baseline;
+        justify-content: initial;
     }
     .white-btn{
         white-space: nowrap;
