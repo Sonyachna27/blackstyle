@@ -196,8 +196,9 @@ nav {
     color: var(--white); 
 }
 nav a:hover{
-    color: var(--gray);
+    /* color: var(--gray); */
     transition: all .3s;
+    opacity: .6;
 }
 .header__tel{
     border: 1px solid var(--white);
@@ -294,7 +295,7 @@ nav a:hover{
     width: 100%;
     display: flex;
     flex-direction: column; 
-    padding: 60px;
+    padding: 54px;
     color: var(--white);
 }
 .about__bottom-wrapper p:nth-of-type(3){
@@ -652,17 +653,28 @@ nav a:hover{
     outline: none;
     color: var(--white);
 }
-.form__wrap form input::placeholder{
-    color: #494949;
+.form__wrap form input::placeholder,
+#message::placeholder {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    /* display: flex;
+    align-items: flex-start; */
 }
 #message{
     margin-bottom: 30px;
     min-height: 180px;
-    text-align: start;
+    align-items: flex-start;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #494949;
+    background: transparent;
+    padding: 20px;
+    outline: none;
+    color: var(--white);
+    font: inherit;
 }
 
 .form__wrap form input[type=submit]{
@@ -733,10 +745,6 @@ footer{
 }
 .main__text-wrap{
     max-width: 100%;
-}
-.line__top{
-    left: inherit;
-    right: 36px;
 }
 .about__top-wrapper {
    flex-direction: column;
