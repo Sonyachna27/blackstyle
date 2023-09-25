@@ -936,6 +936,8 @@ footer{
     }
     .services__photo img{
         max-height: 288px;
+        min-height: 288px;
+        height: 100%;
         object-fit: cover;
         max-width: 100%;
     }
@@ -1013,7 +1015,16 @@ footer{
     .connect-section{
         padding: 70px 0;
     }
-  
+    .services__block-item {
+        padding: 20px;
+    }
+    .services__photo {
+        padding: 0;
+        gap: 0;
+    }
+    /* .services__photo img{
+        max-width: 320px;
+    } */
    .work__wrapper h2{
     max-width: 230px;
     text-align: center;
