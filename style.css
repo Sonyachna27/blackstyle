@@ -217,13 +217,13 @@ nav a:hover{
     justify-content: space-between;
 }
 .main__img{
-    max-width: 500px;
+    max-width: 380px;
+    width: 100%;
 }
 .main__text-wrap{
     position: relative;
     display: flex;
     flex-direction: column;
-    /* max-width: 500px; */
 }
 .main__text-wrap p{
     color: var(--white);
@@ -598,16 +598,18 @@ nav a:hover{
     border-radius: 20px;
     background: var(--black);
     min-height: 210px;
+    max-height: 210px;
     max-width: 100%;
     width: 100%;
-    padding: 20px;
+    border: 1px solid var(--black);
+    padding: 19px;
+    cursor: pointer;
 }
 .connect__link:hover{
-    transform: scale(1.05);
+   background: transparent;
+   
     transition: all .3s ease;
-    -webkit-box-shadow: 10px 10px 5px 0px rgb(2 2 2 / 78%);
-    -moz-box-shadow: 10px 10px 5px 0px rgb(2 2 2 / 78%);
-    box-shadow: 10px 10px 5px 0px rgb(2 2 2 / 78%);
+    
 }
 .connect__link span{
     color: var(--white);
@@ -719,13 +721,13 @@ footer{
     font-weight: 400;
     text-transform: lowercase;
 }
-@media screen and (min-width: 1100px){
+@media screen and (min-width: 1175px){
     .main__img {
-        max-width: 560px;
+        max-width: 500px;
     }
-    .about__bottom img{
+    /* .about__bottom img{
         max-width: 600px;
-    }
+    } */
     .about h2 {
         max-width: 600px;
     }
@@ -746,9 +748,14 @@ footer{
 }
 .about__top-wrapper {
    flex-direction: column;
+   
 }
 .about__bottom{
     flex-direction: column;
+
+}
+.about__bottom-wrapper {
+    padding: 40px 20px;
 }
 .about__top{
     max-width: 100%;
@@ -777,10 +784,6 @@ footer{
 .work__images {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-}
-.line__top1 {
-    right: -68px;
-    top: -170%;
 }
 }
 @media screen and (max-width:990px) {
@@ -929,9 +932,10 @@ footer{
      .order-btn {
         max-width: 100%;
     }
-    .services img{
+    .services__photo img{
         max-height: 288px;
         object-fit: cover;
+        max-width: 100%;
     }
     .connect-wrapper {
         grid-template-columns: 1fr;
