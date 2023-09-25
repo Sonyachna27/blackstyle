@@ -359,6 +359,7 @@ nav a:hover{
     font-style: normal;
     font-weight: 500;
     max-height: 21px;
+    background: inherit;
 }
 .services__item-wrapper p{
    margin-bottom: 10px;
@@ -604,8 +605,8 @@ nav a:hover{
     transform: scale(1.05);
     transition: all .3s ease;
     -webkit-box-shadow: 10px 10px 5px 0px rgb(2 2 2 / 78%);
--moz-box-shadow: 10px 10px 5px 0px rgb(2 2 2 / 78%);
-box-shadow: 10px 10px 5px 0px rgb(2 2 2 / 78%);
+    -moz-box-shadow: 10px 10px 5px 0px rgb(2 2 2 / 78%);
+    box-shadow: 10px 10px 5px 0px rgb(2 2 2 / 78%);
 }
 .connect__link span{
     color: var(--white);
@@ -649,6 +650,7 @@ box-shadow: 10px 10px 5px 0px rgb(2 2 2 / 78%);
     background: transparent;
     padding: 20px;
     outline: none;
+    color: var(--white);
 }
 .form__wrap form input::placeholder{
     color: #494949;
