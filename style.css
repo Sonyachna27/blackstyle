@@ -333,16 +333,18 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     gap: 10px;
+    height: 100%;
+    justify-content: space-between;
 }
 .services__block-item{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 20px;
     padding: 40px;
     border: 1px solid var(--white);
+    gap: 40px;
 }
-.services__block-item h4{
+.services__block-item h3{
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -355,6 +357,7 @@ nav a:hover{
     gap: 10px;
     width: 100%;
     font-size: 12px;
+    
 }
 .services__item-wrapper > .tab-span{
     max-width: 43px;
@@ -368,6 +371,7 @@ nav a:hover{
 .services__item-wrapper p{
    font-size: 12px;
    margin-bottom: 0;
+
 }
 .services__photo{
     display: flex;
@@ -379,6 +383,7 @@ nav a:hover{
     border: none;
     gap: 40px;
 }
+
 .services__text{
     padding: 40px;
     display: flex;
@@ -393,7 +398,9 @@ nav a:hover{
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
-    max-width: 100%;
+    max-width: 406px;
+    width: 100%;
+    margin-bottom: 0;
 }
 .services__text a{
     color: var(--white);
