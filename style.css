@@ -124,7 +124,6 @@ h3{
     display: flex;
     align-items: center;
     gap: 10px;
-    color: var(--orange);
     font-size: 32px;
     font-weight: 600;
     max-width: 155px;
@@ -325,9 +324,9 @@ nav a:hover{
 .services__blocks{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap:40px;
+    gap:40px;
     color: var(--white);
-    row-gap: 44px;  
+     
 }
 .services__block-container{
     display: flex;
@@ -336,7 +335,7 @@ nav a:hover{
     height: 100%;
     justify-content: space-between;
 }
-.services__block-item{
+.services__block-item:not(:nth-child(4)){
     display: flex;
     flex-direction: column;
     border-radius: 20px;
@@ -346,13 +345,12 @@ nav a:hover{
 }
 .services__block-item h3{
     font-size: 24px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: uppercase;
     margin-bottom: 0;
     max-width: 100%;
     width: 100%;
+    min-height: fit-content;
 }
 .services__item-wrapper{
     display: flex;
@@ -383,7 +381,6 @@ nav a:hover{
     border-radius: 20px;
     padding: 0;
     border: none;
-    gap: 40px;
 }
 
 .services__text{
@@ -391,11 +388,10 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
     color: var(--black);
 }
 .services__text h3{
-    font-size: 32px;
     color: var(--black);
     font-size: 20px;
     font-weight: 600;
